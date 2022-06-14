@@ -10,10 +10,14 @@ dotenv.load_dotenv()
 API_KEY = os.getenv('API_KEY')
 
 #add our URL
-BASE_URL = "http://api.openweathermap.org/data/3.0/weather?"
+BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
 
 #Add a city which weather conditions we want
-CITY = "Mashhad"
+CITY = "Tehran"
 
+url = BASE_URL + "appid=" + API_KEY + "&q=" + CITY
 
+response = requests.get(url).json()
+
+print(response)
 
