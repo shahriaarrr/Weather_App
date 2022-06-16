@@ -1,6 +1,7 @@
 import datetime as dt
 import requests
 import schedule
+import time
 # for loading and reading .env file
 from dotenv import load_dotenv
 import os
@@ -64,3 +65,4 @@ schedule.every(24).hours.do(main)
 # run schedule function
 while True:
     schedule.run_pending()
+    time.sleep(1)
