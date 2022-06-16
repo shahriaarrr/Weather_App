@@ -37,7 +37,7 @@ CREATE TABLE {table name}(
 $ python3 main.py
 ```
 
-**Please email me(shahriaarrr@gmail.com) your feedback from this project And to report problems with this program or request a new feature, you can register an [issue](https://github.com/shahriaarrr/discordbot/issues/new).**
+**Please email me(shahriaarrr@gmail.com) your feedback from this project And to report problems with this program or request a new feature, you can register an [issue](https://github.com/shahriaarrr/Weather_App/issues/new).**
 
 ----
 Developing with ♥ by Shahriar Ghasempour. 2022 ©
