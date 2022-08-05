@@ -49,8 +49,8 @@ def main():
     wind_speed = response['wind']['speed']
     humidity = response['main']['humidity']
     description = response['weather'][0]['description']
-    sunrise_time = dt.datetime.utcfromtimestamp(response['sys']['sunrise'] + response['timezone'])
-    sunset_time = dt.datetime.utcfromtimestamp(response['sys']['sunset'] + response['timezone'])
+    sunrise_time = dt.datetime.utcfromtimestamp(response['sys']['sunrise'] + response['timezone']).strftime('%Y-%m-%d  %H:%M:%S')
+    sunset_time = dt.datetime.utcfromtimestamp(response['sys']['sunset'] + response['timezone']).strftime('%Y-%m-%d  %H:%M:%S')
     
     print("get all information from openweather API")
 
